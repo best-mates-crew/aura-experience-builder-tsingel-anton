@@ -1,0 +1,38 @@
+<template>
+    <div class="help__icon" onclick={show}></div>
+    <div class={modalClass}>
+        <div class="container">
+            <!-- HEADER -->
+            <c-core_mobile-sticky-header onbuttonclick={hide} button-icon={buttonIcon} stick-header={isSticky}>
+            </c-core_mobile-sticky-header>
+            <div class="content">
+                <div class="header core-background-branded core-color-white">
+                    <h2 class="headline-title core-title-large">{title}</h2>
+                    <p class="body headline-subtitle core-placeholder">{pageSubtitle}</p>
+                </div>
+                <!-- BODY -->
+                <section class="description">
+                    <template for:each={data} for:item="item">
+                        <article class="description__item" key={item.id}>
+                            <h3 class="description__header">{item.title}</h3>
+                            <p class="description__text">{item.description}</p>
+                            <!-- <img class="description__image " src={item.image} alt={item.title}> -->
+                        </article>
+                    </template>
+                </section>
+
+                <div class="footer">
+                    <a class="info core-link" title="infoLink">{showInfo}</a>
+                    <div class="footer__separator"></div>
+                    <div class="footer__reference">{reference}</div>
+                                  
+                1. <a href="https://www.arthritis.org/living-with-arthritis/treatments/plan/remission/rheumatoid-arthritisremission-and-relapse.php" class="">{link}</a>
+                  <div class="footer__date">{accessedDate}</div>  
+                </div>
+                <!-- <a>Learn More</a> -->
+
+
+            </div>
+        </div>
+    </div>
+</template>

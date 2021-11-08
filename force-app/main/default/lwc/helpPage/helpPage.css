@@ -1,0 +1,412 @@
+/* COMMON STYLES */
+/*ICON-COLOR*/
+/* lightning-primitive-icon svg,
+lightning-icon svg {
+    fill: inherit !important;
+} */
+
+/*ICON-BORDER-COLOR-FIX*/
+lightning-button-icon button:focus {
+    box-shadow: none !important;
+}
+
+/*CUSTOM LAYOUT*/
+.siteforceSldsOneColLayout .slds-col--padded {
+    padding: 0 !important;
+}
+
+/*CUSTOM CHECKBOX - override lightning-checkbox css*/
+.core-branded-checkbox .slds-checkbox_add-button .slds-checkbox_faux::before,
+.core-branded-checkbox .slds-checkbox_add-button .slds-checkbox_faux::after {
+    width: 0;
+    height: 0;
+}
+
+.core-branded-checkbox .slds-checkbox_add-button .slds-checkbox_faux {
+    border: 1px solid #6c3bc2;
+}
+
+.core-branded-checkbox .slds-checkbox_add-button [type=checkbox]:checked ~ .slds-checkbox_faux {
+    background: #00C9A7;
+}
+
+.core-branded-checkbox .slds-checkbox_add-button [type=checkbox] ~ .slds-checkbox_faux:focus {
+    border: 1px solid #6c3bc2;
+    outline-color: transparent;
+}
+
+.core-branded-checkbox .slds-checkbox_add-button [type=checkbox]:checked ~ .slds-checkbox_faux:focus {
+    border: 0;
+}
+
+/*brand header*/
+.core-branded-header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+.core-branded-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(214.98deg, #602BBE 28.83%, #294CA0 100%);
+    border-radius: 0 0 50% 50%/0 0 35% 35%;
+    transform: scaleX(1.3);
+}
+
+.core-branded-header .core-logo {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 1.5rem 1.5rem 1.5rem;
+}
+
+/*COMMON STYLES ======================================================================================================*/
+/*Background*/
+.core-background-gray {
+    background: #F7F7F7;
+}
+
+.core-background-branded {
+    background: linear-gradient(214.98deg, #602BBE 28.83%, #294CA0 100%);
+}
+
+/*Margin*/
+.core-m-small {
+    margin: 1rem;
+}
+
+.core-m {
+    margin: 2rem;
+}
+
+.core-m-horizontal {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.core-m-vertical {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/*Padding*/
+.core-p-small {
+    padding: 1rem;
+}
+
+.core-p {
+    padding: 2rem;
+}
+
+.core-p-horizontal {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.core-p-vertical {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*Border*/
+.core-border-b-gray {
+    border-bottom: 1px solid #0000001F;
+}
+
+/*Structure*/
+.core-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    border-top: 1px solid #0000001F;
+    background-color: white;
+    z-index: 10000;
+}
+
+/*Text*/
+.core-title {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: 500;
+    font-size: 1.25rem; /*20px*/
+}
+
+.core-title-large {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: 500;
+    font-size: 1.75rem; /*28px*/
+    word-break: break-word;
+}
+
+.core-placeholder {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: normal;
+    font-size: 1.1rem; /*18px*/
+}
+
+.core-text {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: 500;
+    font-size: 1rem; /*16px*/
+}
+
+.core-text-tiny {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: 300;
+    font-size: 1rem; /*16px*/
+}
+
+.core-link {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: 500;
+    font-size: .9rem; /*14px*/
+    color: #0041FF;
+    cursor: pointer;
+}
+
+.core-link-underline {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: 500;
+    font-size: .9rem; /*14px*/
+    color: #0041FF;
+    text-decoration: underline;
+    text-underline-position: under;
+    cursor: pointer;
+}
+
+.core-label {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: normal;
+    font-size: .95rem; /*15px*/
+}
+
+.core-input-label {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: bold;
+    font-size: .8rem; /*13px*/
+}
+
+.core-input-placeholder {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: normal;
+    font-size: 1.1rem; /*18px*/
+}
+
+.core-error-label {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: 500;
+    font-size: .75rem; /*12px*/
+    color: #AB0404;
+}
+
+/*Color*/
+.core-color-brand {
+    color: #061D49;
+}
+
+.core-color-white {
+    color: #FFFFFF;
+}
+
+.core-color-blue {
+    color: #0041FF;;
+}
+
+.core-color-lightblue {
+    color: #77DDD3;
+}
+
+.core-color-gray {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.core-color-black {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.core-color-error {
+    color: #AB0404;
+}
+
+.core-color-b {
+    border: 1px solid #061D49;
+}
+
+.core-color-b-b {
+    border-bottom: 1px solid #061D49;
+}
+
+.core-color-b-b-error {
+    border-bottom: 1px solid #AB0404;
+}
+
+.core-color-icon {
+    fill: white;
+}
+
+.core-color-icon-success {
+    fill: #1AE5BE;
+}
+
+/*SPINNER*/
+lightning-spinner.core-spinner,
+button lightning-spinner {
+    background-color: transparent !important;
+    opacity: 1 !important;
+}
+
+.core-spinner-white .slds-spinner__dot-a::after,
+.core-spinner-white .slds-spinner__dot-a::before,
+.core-spinner-white .slds-spinner__dot-b::after,
+.core-spinner-white .slds-spinner__dot-b::before,
+.core-spinner-white .slds-spinner::after,
+.core-spinner-white .slds-spinner::before {
+    background: white;
+}
+
+/*Style for HTML links*/
+.core-modal a {
+    color: #061D49;
+}
+
+/* STYLES FOR MODAL POPUP */
+
+.modal {
+    font-family: 'Neue Haas Unica Pro';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.container {
+    background: #FFFFFF;
+    position: relative;
+    transform: translate(0px, 0px);
+    height: 100%;
+    transition: transform 0.1s linear 0s, opacity 0.1s linear 0s;
+    z-index: 9002;
+}
+
+.content {
+    overflow-y: auto;
+}
+
+.headline-title {
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    margin-top: 1.625rem;
+}
+
+.headline-subtitle {
+    min-height: 4rem;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding-top: 0.6rem;
+    padding-bottom: 1.125rem;
+}
+
+.header {
+    padding: 3.5rem 1.56rem 0;
+    min-height: 3.5rem;
+}
+
+.title-slot {
+    width: 100%;
+    line-height: 1.5rem;
+    margin: auto;
+}
+
+.body-slot {
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.modal .body-slot {
+    margin-top: 0.625rem;
+}
+
+.modal.i-phone .body-slot {
+    margin-top: 0.75rem;
+}
+
+.description {
+    padding: 1.875rem 0.9375rem;
+}
+
+.description__item {
+    margin-bottom: 1.875rem;
+}
+
+.description__item:last-child {
+    margin-bottom: unset;
+}
+
+.description__header {
+    margin-bottom: 1.25rem;
+    padding: 0 0.625rem;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #602BBE;
+}
+
+.description__text {
+    font-family: inherit;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    color: #061D49;
+}
+
+.description__image {
+    margin-top: 1.25rem;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.05);
+}
+
+.help__icon {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.footer {
+    padding: 1.875rem 0.9375rem;
+}
+
+.footer__separator {
+    box-sizing: border-box;
+    height: 1px;
+    border: 0.5px solid #979797;
+    opacity: 0.37;  
+}
+
+.footer__reference {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+
+.footer__reference,
+.footer__date {
+    font-family: 'Neue Haas Unica Pro';
+    font-weight: bold;
+    font-size: .8rem; 
+}

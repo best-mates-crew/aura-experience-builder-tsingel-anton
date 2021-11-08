@@ -1,0 +1,27 @@
+{
+  "appPageId" : "51ea9f3a-330e-4464-91fe-14463de838d3",
+  "componentName" : "c:productManager",
+  "id" : "693d302b-f4bd-427e-a7ce-8a2d5420a4f9",
+  "label" : "help-page",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "pageTitle" : "help-page",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "community_builder:seoAssistant",
+      "id" : "daab2f12-0f5a-480f-aeb7-f0a773513e61",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7499b4c6-23b5-4411-811d-a56de453f4e1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-help-page"
+}

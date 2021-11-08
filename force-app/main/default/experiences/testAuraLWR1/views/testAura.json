@@ -1,0 +1,81 @@
+{
+  "appPageId" : "91e7ea20-5313-4003-9413-f94ea51ad1e5",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "id" : "2b88c600-96b6-46ac-a67f-0132e935ab73",
+  "label" : "testAura",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:testAuraComponent",
+      "id" : "f76e62db-15cd-4cfb-93e4-f6e06fad30ff",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3ba542fe-577f-43d3-b25f-df4793687683",
+    "regionName" : "column1",
+    "type" : "region"
+  }, {
+    "id" : "526230fa-eee3-4ae2-9b95-fcdf1f719f3a",
+    "regionName" : "column2",
+    "type" : "region"
+  }, {
+    "id" : "15efea3e-61c1-4310-9c75-c0ea62f67294",
+    "regionName" : "column3",
+    "type" : "region"
+  }, {
+    "id" : "8a9ac648-8187-44d2-8d25-4005ff0324c1",
+    "regionName" : "column4",
+    "type" : "region"
+  }, {
+    "id" : "d43c5840-fcea-4d7e-be43-48945894b5ed",
+    "regionName" : "column5",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Test Aura page"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c231ad1b-62ba-4758-b851-0c7c01a62765",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c99d9038-5b28-4263-a8f8-bc084a185205",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "id" : "00913607-658a-4c64-b3d4-ef51c365d70d",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:testAuraComponent",
+      "id" : "849d8d02-eaf7-4ae1-9dfc-360ffbef1ec8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ef0b8680-c957-4d47-877c-a06f843e50d8",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "id" : "a3c3b15a-683e-40dd-8338-6de249e32ef4",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3a67642a-62c7-4951-a996-98142681fa6f",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "5d658023-9b7e-42ed-91ae-7dde3abe84f6",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "RDvPRL5pkKIrPly6294Fdv2ccKY9dD",
+  "type" : "view",
+  "viewType" : "custom-testaura"
+}

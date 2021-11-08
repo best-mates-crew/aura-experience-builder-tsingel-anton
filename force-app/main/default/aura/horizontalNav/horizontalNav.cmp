@@ -1,0 +1,23 @@
+<aura:component extends="forceCommunity:navigationMenuBase">
+    <aura:handler name="render" value="{!this}" action="{!c.onRender}"/>
+    <aura:attribute name="isLoaded" type="Boolean" default="false"/>
+
+    <aura:if isTrue="{v.isLoaded)}"> 
+        <div class="slds-grid slds-grid--horizontal slds-navigation-list--horizontal">
+            <ul class="slds-list_horizontal slds-has-dividers_right slds-has-block-links_space" onclick="{!c.onClick}">
+                <aura:iteration items="{!v.menuItems}" var="item">
+                    <li class="slds-item">
+                        <a href="javascript:void(0);" data-menu-item-id="{!item.id}">
+                            {!item.label}
+                        </a>
+                    </li>
+                </aura:iteration>
+            </ul>
+        </div>
+        <aura:set attribute="else">
+            <div class="slds-col">
+                Loading...
+            </div>
+        </aura:set>
+    </aura:if>
+</aura:component>

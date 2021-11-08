@@ -1,0 +1,77 @@
+{
+  "appPageId" : "91e7ea20-5313-4003-9413-f94ea51ad1e5",
+  "componentName" : "siteforce:sldsThreeCol444Layout",
+  "id" : "3ef5124b-c54c-427d-b8c5-f3c84846e3c5",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "5831d27f-906c-4468-9993-aff89e5ad918",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "34f046a4-177c-4509-b6aa-cef6410a81b8",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "9319a4c0-94b7-47c1-b018-05939c1a1e23",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "4e5ecb8f-269e-4098-bdb9-366c6df50f13",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c8c89a90-5769-439e-a586-31abf3d7615b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "id" : "28812bac-0e44-49a2-98f6-24b415369c2b",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "05160299-5f03-47e8-ba64-404b63fab270",
+    "regionName" : "sidebarAlt",
+    "type" : "region"
+  }, {
+    "id" : "783242eb-80f2-47a5-a2eb-4bd16f01b1a2",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:helpPage",
+      "id" : "cb98303a-307f-4070-bd78-b42bac7e05c0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4aa8796b-9ecf-4ca8-87dc-d56549a404af",
+    "regionName" : "column1",
+    "type" : "region"
+  }, {
+    "id" : "e81983a6-3b07-48e8-9260-ac226c0d39c6",
+    "regionName" : "column2",
+    "type" : "region"
+  }, {
+    "id" : "e5796846-b601-4c7c-bddb-1bdd2d3df2ac",
+    "regionName" : "column3",
+    "type" : "region"
+  }, {
+    "id" : "953c358d-7d99-4ea0-aea2-7d84e0ffced7",
+    "regionName" : "column4",
+    "type" : "region"
+  }, {
+    "id" : "c56686d4-bda3-44fb-be2c-a818bcf6afee",
+    "regionName" : "column5",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "LU4NuyPyaD3WJ9Url7cfy2TsyZax2T",
+  "type" : "view",
+  "viewType" : "home"
+}

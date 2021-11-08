@@ -1,0 +1,226 @@
+<template>
+
+
+    
+        <div class="slds-card">
+            <div class="slds-p-around_medium">
+                <div class="displayInfo">
+                    <lightning-icon icon-name="utility:warning" alternative-text="Info" title="Info" size="small"> </lightning-icon>
+                    <p>
+                        <lightning-formatted-text value="First choose an object to use the SOQL builder wizard."></lightning-formatted-text>
+                    </p>
+                </div>
+            </div>
+    
+            <div class="slds-p-around_medium">
+                <div class="slds-grid slds-wrap slds-grid_vertical-align-end">
+                    <div class="slds-col slds-size_1-of-1">
+                        <span>
+                            <lightning-formatted-text value="Choose the object, fields, and criteria to build a SOQL query below:"></lightning-formatted-text>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <span>
+                            <lightning-combobox
+                                name="Object"
+                                label="Object"
+                                value=""
+                                placeholder="Select Object"
+                                options={options}
+                                onchange={handleChange}
+                                required
+                            >
+                            </lightning-combobox>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <span>
+                            <lightning-radio-group name="View as:" label="View as:" options={viewOptions} value={value} type="radio" variant="label-stacked">
+                            </lightning-radio-group>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <span>
+                            <lightning-radio-group
+                                name="Deleted and archived records:"
+                                label="Deleted and archived records:"
+                                options={archiveOptions}
+                                value={value}
+                                type="radio"
+                                variant="label-stacked"
+                            >
+                            </lightning-radio-group>
+                        </span>
+                    </div>
+    
+                    <div class="slds-grid slds-wrap">
+                        <table>
+                            <tr>
+                                <td rowspan="2">
+                                    <lightning-dual-listbox name="Fields" label="Fields:" options={options} onchange={handleChange}></lightning-dual-listbox>
+                                </td>
+    
+                                <td>
+                                    <lightning-combobox label="Object status:" name="status" value={value} options={options} onchange={handleChange}>
+                                    </lightning-combobox>
+                                </td>
+                                <td>
+                                    <lightning-combobox name="status" value={value} options={options} onchange={handleChange}> </lightning-combobox>
+                                </td>
+                                <td>
+                                    <lightning-combobox name="status" value={value} options={options} onchange={handleChange}> </lightning-combobox>
+                                </td>
+                                <td>
+                                    <lightning-input label="Max Records:" type="number" name="input6"></lightning-input>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <lightning-combobox label="Filter results by:" name="status" value={value} options={options} onchange={handleChange}>
+                                    </lightning-combobox>
+                                </td>
+                                <td>
+                                    <lightning-combobox name="status" value={value} options={options} onchange={handleChange}> </lightning-combobox>
+                                </td>
+                                <td>
+                                    <lightning-combobox name="status" value={value} options={options} onchange={handleChange}> </lightning-combobox>
+                                </td>
+    
+                                <td>
+                                    <lightning-button-icon icon-name="utility:settings" variant="container" alternative-text="Settings" title="Settings">
+                                    </lightning-button-icon>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="slds-col slds-size_1-of-1">
+                        <span>
+                            <lightning-formatted-text value="Enter or modify a SOQL query below:"></lightning-formatted-text>
+                        </span>
+                        <span>
+                            <lightning-input type="text" name="query" style="width: 1000px"></lightning-input>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3 slds-grid_align-end">
+                        <span>
+                            <lightning-button type="submit" name="submit" label="Query"> </lightning-button>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3 slds-grid_align-end">
+                        <span class="slds-p-around_medium lgc-bg">
+                            <lightning-helptext content="You'll receive weekly updates"></lightning-helptext>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+<!-- 
+
+    <div class="displayInfo">
+      <lightning-icon
+        src={warningIcon}
+        size="medium"
+      ></lightning-icon>
+      <p>
+        <lightning-formatted-text
+          value={displayInfo}
+        ></lightning-formatted-text>
+      </p>
+    </div>
+
+    <table>
+        <tbody>
+            <tr>
+            <td> 
+                <lightning-combobox
+                    name="Object"
+                    label="Object:"
+                    placeholder="Choose Status"
+                    value={comboboxValue}
+                    onchange={handleChangeCombobox}
+                    options={statusOptions}>
+                </lightning-combobox>
+                <p>Selected option: {value}</p>
+             
+                <lightning-dual-listbox name="languages"
+                    label="Select Languages"
+                    source-label="Available"
+                    selected-label="Selected"
+                    field-level-help="Select your preferred languages"
+                    options={multiselectOptions}
+                    onchange={handleChangeMultiselect}>
+                </lightning-dual-listbox>
+
+                <div class="slds-box">
+                    <p>Selected values are: {selected}</p>
+                </div>
+            </td>
+
+            <td>
+                <table>
+                        <tr>
+                            <td>
+                                <lightning-radio-group class="radio-group"
+                                    label="View as:"
+                                    options={options}
+                                    value={value}
+                                    onchange={handleChange}
+                                  >
+                                </lightning-radio-group>
+                            </td>
+                            <td>
+                                <lightning-radio-group class="radio-group"
+                                label="Deleted and archived records:"
+                                options={records}
+                                value={value}
+                                onchange={handleChange}
+                              >
+                            </lightning-radio-group>
+                            </td>
+                        </tr>
+                </table>
+
+
+                <table>
+                    <tbody>
+                        <tr><lightning-combobox
+                                    name="Object"
+                                    label="Object:"
+                                    placeholder="Choose Status"
+                                    value={comboboxValue}
+                                    onchange={handleChangeCombobox}
+                                    options={statusOptions}>
+                                </lightning-combobox>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                    </tbody>
+                </table>
+
+            </td>
+
+            </tr>
+            <tr style="width: 100%;"><td>
+                <lightning-textarea
+                value="initial value"
+                label="What are you thinking about?"
+                max-length="300">
+                </lightning-textarea>
+            </td>
+            </tr>
+            <tr></tr>
+        </tbody>
+    </table> -->
+
+
+  </template>

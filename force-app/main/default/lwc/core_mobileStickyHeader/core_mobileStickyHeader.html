@@ -1,0 +1,19 @@
+<!-- Created by D.Yasinskiy on 22.10.2019. --><!-- Sticky Header -->
+<template>
+    <div data-id="header" class={headerStyle}>
+        <div onclick={handleClick} if:false={hideBackButton} title="header.backbutton">
+            <div if:false={showSpinner} class={backButtonClass}>
+                <div style="width: 25px; height: 25px; background-color:chartreuse"></div>
+            </div>
+        </div>
+        <!-- <c-core_mobile-spinner if:true={showSpinner} class="back-spinner"></c-core_mobile-spinner> -->
+
+        <div class={titleClass}>
+            <slot name="title" title="header.title">{title}</slot>
+        </div>
+
+        <div if:true={subTitle} class="sub-title core-color-white">
+            <slot name="subtitle" title="header.subtitle">{subTitle}</slot>
+        </div>
+    </div>
+</template>

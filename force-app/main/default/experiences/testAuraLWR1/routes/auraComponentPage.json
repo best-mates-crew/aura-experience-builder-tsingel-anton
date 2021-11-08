@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "2b88c600-96b6-46ac-a67f-0132e935ab73",
+  "appPageId" : "91e7ea20-5313-4003-9413-f94ea51ad1e5",
+  "configurationTags" : [ ],
+  "id" : "f5f627a4-978a-442a-ab6f-18f5a468be00",
+  "label" : "Aura component page",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-testaura",
+  "type" : "route",
+  "urlPrefix" : "testaura"
+}

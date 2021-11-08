@@ -1,0 +1,91 @@
+.container {
+    font-family: 'Neue Haas Unica Pro';
+    height: 3.5rem;
+    right: 0;
+    left: 0;
+    z-index: 500;
+    background: linear-gradient(214.98deg, #602BBE 28.83%, #294CA0 100%);
+    position: fixed;
+    transition: box-shadow .2s linear;
+}
+
+.container.iphone {
+    height: 4.75rem;
+    padding-top: 1.25rem;
+}
+
+.container.transparent-background {
+    background: transparent;
+}
+
+.container.safe-area-top.iphone .core-title.full-length {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    display: flex;
+    margin: auto;
+}
+
+.container.safe-area-top.iphone .core-title {
+    text-align: center;
+    padding-left: 3rem;
+}
+
+.container.sticky {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(214.98deg, #602BBE 28.83%, #294CA0 100%);
+}
+
+.back-button,
+.core-title,
+.sub-title {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.back-button {
+    padding-left: .5rem;
+    z-index: 501;
+}
+
+.core-title {
+    width: 100%;
+    font-size: 1.25rem;
+    padding-left: 3rem;
+    padding-right: 6rem;
+    line-height: 1.5rem;
+}
+
+.core-title.full-length {
+    padding-right: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5rem;
+    margin: auto;
+}
+
+.sub-title {
+    width: 6rem;
+    text-align: right;
+    padding-right: 1rem;
+    right: 0;
+    white-space: nowrap;
+}
+
+/* .back-button c-core_mobile-svg {
+    height: 1.5rem;
+    width: 1.5rem;
+} */
+
+.icon {
+    fill: white;
+}
+
+.back-spinner {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    position: absolute;
+    bottom: 1rem;
+}

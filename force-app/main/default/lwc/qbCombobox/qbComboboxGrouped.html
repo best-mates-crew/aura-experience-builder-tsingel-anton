@@ -1,0 +1,62 @@
+<template>
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="combobox-id-10">Relate To</label>
+        <div class="slds-form-element__control">
+            <div class="slds-combobox_container">
+                <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open" aria-expanded="true" aria-haspopup="listbox" role="combobox">
+                    <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                        <input type="text" class="slds-input slds-combobox__input slds-has-focus" id="combobox-id-10" aria-controls="listbox-id-3" autocomplete="off" role="textbox" placeholder="Select an Option…" readonly="" />
+                        <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+                            <lightning-icon icon-name="utility:down" size="x-small" aria-hidden="true" alternative-text="drop-down" title="click to drop-down"> </lightning-icon>
+                        </span>
+                    </div>
+                    <div id="listbox-id-3" class="slds-dropdown slds-dropdown_fluid" role="listbox">
+                        <ul class="slds-listbox slds-listbox_vertical" role="group" aria-label="Group One">
+                            <template for:each={values} for:item="eachvalue">
+                                <li role="presentation" class="slds-listbox__item" key={eachvalue.label}>
+                                    <div class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-is-selected" role="option" onclick={handleSelect}>
+                                        <div role="presentation" class="slds-listbox__item">
+                                            <div class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="presentation">
+                                                <h3 class="slds-listbox__option-header" role="presentation">Group One</h3>
+                                            </div>
+                                        </div>
+                                        <span class="slds-media__figure slds-listbox__option-icon" title={eachvalue.label}
+                                            >{eachvalue.label}
+                                            <template if:true={selected}>
+                                                <span class="slds-icon_container slds-icon-utility-check slds-current-color">
+                                                    <lightning-icon class="slds-p-top_xxx-small" icon-name="utility:check" size="x-small" alternative-text="Selected" title="Selected"> </lightning-icon>
+                                                </span>
+                                            </template>
+                                        </span>
+                                        <span class="slds-media__body">
+                                            <span class="slds-truncate" title={label}>
+                                                <span class="slds-assistive-text">Current Selection:</span>
+                                                {label}
+                                            </span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slds-listbox_selection-group">
+                <ul class="slds-listbox slds-listbox_horizontal" role="listbox" aria-label="Selected Options:" aria-orientation="horizontal">
+                    <template for:each={selectedvalues} for:item="eachvalue">
+                        <li key={eachvalue} class="slds-listbox-item" role="presentation">
+                            <span class="slds-pill" role="option" tabindex="0" aria-selected="true">
+                                <span class="slds-pill__label" title={eachvalue}>{eachvalue}</span>
+                                <span class="slds-icon_container slds-pill__remove" title="Remove">
+                                    <lightning-icon icon-name="utility:close" size="x-small" aria-hidden="true" alternative-text="Remove" title="Remove" onclick={closePill} data-value={eachvalue}> </lightning-icon>
+                                    <span class="slds-assistive-text">Click to remove</span>
+                                </span>
+                            </span>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>

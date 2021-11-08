@@ -1,0 +1,100 @@
+{
+  "activeBrandingSetId" : "0db63f28-1c14-42f8-863b-225f6d94a6de",
+  "customCSS" : "",
+  "developerName" : "byo",
+  "id" : "42bf956d-5b81-4427-83dc-4af85db485ea",
+  "label" : "Build Your Own (LWR)",
+  "layouts" : {
+    "Inner" : "bde447ff-b966-4dfe-b4d2-5d4f72d35320",
+    "ServiceNotAvailable" : "3e7d6821-0abf-4756-95e8-ae7302d9adc9"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "community_byo:scopedHeaderAndFooter",
+    "id" : "bde447ff-b966-4dfe-b4d2-5d4f72d35320",
+    "label" : "Scoped Header and Footer",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "sectionConfig" : "{\"UUID\":\"0994b0c3-7713-49bd-99a5-eb2455aecaf5\",\"columns\":[{\"UUID\":\"fcb1a911-43fb-429d-a68d-aaea874d3bf8\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"3\",\"seedComponents\":null},{\"UUID\":\"9be1f862-eecc-4f35-9499-a3ebafb684ab\",\"columnName\":\"Column 2\",\"columnKey\":\"f958a\",\"columnWidth\":\"3\",\"seedComponents\":[]},{\"UUID\":\"30903aa1-a850-4896-b20d-7196e0f0c291\",\"columnName\":\"Column 3\",\"columnKey\":\"b0c76\",\"columnWidth\":\"3\",\"seedComponents\":[]},{\"UUID\":\"a5d6d690-36d5-44f0-9867-418b2d8e63dc\",\"columnName\":\"Column 4\",\"columnKey\":\"4177a\",\"columnWidth\":\"3\",\"seedComponents\":[]}]}"
+        },
+        "componentName" : "community_layout:section",
+        "id" : "0994b0c3-7713-49bd-99a5-eb2455aecaf5",
+        "regions" : [ {
+          "components" : [ {
+            "componentAttributes" : { },
+            "componentName" : "c:helpPage",
+            "id" : "dde31d6d-8e7b-440d-9a07-06408bd0f73f",
+            "renditionMap" : { },
+            "type" : "component"
+          } ],
+          "id" : "fcb1a911-43fb-429d-a68d-aaea874d3bf8",
+          "regionLabel" : "Column 1",
+          "regionName" : "headerSection",
+          "renditionMap" : { },
+          "type" : "region"
+        }, {
+          "id" : "9be1f862-eecc-4f35-9499-a3ebafb684ab",
+          "regionLabel" : "Column 2",
+          "regionName" : "f958a",
+          "renditionMap" : { },
+          "type" : "region"
+        }, {
+          "id" : "30903aa1-a850-4896-b20d-7196e0f0c291",
+          "regionLabel" : "Column 3",
+          "regionName" : "b0c76",
+          "renditionMap" : { },
+          "type" : "region"
+        }, {
+          "id" : "a5d6d690-36d5-44f0-9867-418b2d8e63dc",
+          "regionLabel" : "Column 4",
+          "regionName" : "4177a",
+          "renditionMap" : { },
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "ba2c072f-a923-4c75-966a-23e539c4a2f2",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "sectionConfig" : "{\"UUID\":\"b6f9e536-d1d5-499c-9512-e679c91a07e2\",\"columns\":[{\"UUID\":\"6107b452-afd5-41a8-89d8-ca92a487ef61\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+        },
+        "componentName" : "community_layout:section",
+        "id" : "b6f9e536-d1d5-499c-9512-e679c91a07e2",
+        "regions" : [ {
+          "id" : "6107b452-afd5-41a8-89d8-ca92a487ef61",
+          "regionLabel" : "Theme Footer",
+          "regionName" : "footerSection",
+          "renditionMap" : { },
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "6bd82b17-c8cd-46d9-a4ed-43417260955e",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : { },
+    "componentName" : "community_layout:simpleThemeLayout",
+    "id" : "3e7d6821-0abf-4756-95e8-ae7302d9adc9",
+    "label" : "Service Not Available Theme Layout",
+    "regions" : [ {
+      "id" : "6cd443fa-6552-45ca-8238-4003754d47bb",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "c423e70e-1932-41db-8bda-acbbf2540350",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

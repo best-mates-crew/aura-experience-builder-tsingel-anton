@@ -1,0 +1,9 @@
+<design:component label="Condensed Theme Layout">
+   <design:attribute name="showSearch" label="Show Search Box" default="true" />
+   <design:attribute name="isHorizonalNav" label="Show Holirontal NavBar" default="true"/>
+   <design:attribute name="RussianWords" label="Russian words" datasource="Blyat,Suka,Pizdets,Jopa" default="Jopa" />
+   <!-- <aura:attribute name="Recordtype" type="String" access="global"/> -->
+   <!-- <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> -->
+   <!-- <ui:Inputselect aura:id="Recordty" value="{!v.Recordt}"/><br/> -->
+
+</design:component>
